@@ -29,16 +29,16 @@ const NavBar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link href="/">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <Link href="/feedbacks">Feedbacks</Link>
+                <Link to="/users">Users</Link>
               </li>
             </ul>
           </div>
@@ -56,7 +56,7 @@ const NavBar = () => {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="/feedbacks">Feedbacks</Link>
+              <Link to="/users">Users</Link>
             </li>
           </ul>
         </div>
