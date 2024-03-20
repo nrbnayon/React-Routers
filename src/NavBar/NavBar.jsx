@@ -1,5 +1,7 @@
 // import { Outlet } from "react-router-dom";
 
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   return (
     <div>
@@ -27,21 +29,16 @@ const NavBar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>About</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <a>Item 3</a>
+                <Link href="/contact">Contact</Link>
+              </li>
+              <li>
+                <Link href="/feedbacks">Feedbacks</Link>
               </li>
             </ul>
           </div>
@@ -50,23 +47,16 @@ const NavBar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a>Item 3</a>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/feedbacks">Feedbacks</Link>
             </li>
           </ul>
         </div>
