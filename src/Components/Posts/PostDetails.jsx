@@ -3,10 +3,11 @@ import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 const PostDetails = () => {
   const navigate = useNavigate();
   const { postId } = useParams();
-  console.log(postId);
+  // console.log(postId);
   const post = useLoaderData();
   return (
     <div className="modal-box">
+      <h2>{postId}</h2>
       <h3 className="font-bold text-lg uppercase">{post.title}</h3>
       <p className="py-4">Description: {post.body}</p>
       <div className="modal-action">
